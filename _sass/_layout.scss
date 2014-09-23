@@ -110,6 +110,9 @@
 .col-1-2 {
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width:         calc(50% - (#{$spacing-unit} / 2));
+    &:nth-child(2n+2) {
+        margin-right: $spacing-unit;
+    }
 }
 
 .col-1-4 {

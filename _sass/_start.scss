@@ -3,6 +3,9 @@
     // @extend .col-1-1;
 
     li {
+        @extend .col;
+        padding: $spacing-unit;
+        background-color: #fff;
         // margin: 0;
         display: inline-block;
         vertical-align: top;
@@ -17,8 +20,7 @@
     }
 }
 
-.post-content {
-    p:first-child {
-        @extend .intro;
-    }
+.page-content {
+    background-color: #f9f9f9;
 }
+
