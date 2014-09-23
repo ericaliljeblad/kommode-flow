@@ -16,9 +16,3 @@
         @extend .col-1-2;
     }
 }
-
-.post-content {
-    p:first-child {
-        @extend .intro;
-    }
-}
