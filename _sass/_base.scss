@@ -97,15 +97,18 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    // color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $text-color;
+        // color: darken($brand-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
+        color: $brand-color;
+        // color: $text-color;
         text-decoration: underline;
     }
 }
@@ -209,4 +212,28 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+.logo {
+    width: 300px;
+    margin: 0 auto;
+    // margin-bottom: $spacing-unit*2;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.kommodelink {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+
+    background: $brand-color;
+    left: 50px;
+    padding: 10px 0px;
+}
+
+.logo-mini {
+    width: 180px;
+    margin-left: -48px;
+
 }
