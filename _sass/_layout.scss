@@ -291,7 +291,16 @@
         }
     }
 
-    .intro {
+    p:first-child {
         font-weight: 700;
+    }
+}
+
+/**
+ * Code
+ */
+.highlight {
+    pre, code {
+        background-color: #333;
     }
 }
