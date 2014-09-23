@@ -365,9 +365,21 @@
     }
 }
 
+p, .highlight {
+    margin-bottom: 30px;
+}
+
+.tiny-title {
+    margin: 0;
+}
+
 /**
  * Code
  */
+ code {
+    background-color: #F2F2F2;
+}
+
 .highlight {
     pre, code {
         background-color: #F2F2F2;
