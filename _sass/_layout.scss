@@ -221,39 +221,6 @@
     font-size: 20px;
 }
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-
-    .post-meta {
-        font-size: 18px;
-    }
-
-    li {
-        @extend .col;
-        @extend .col-1-2;
-        padding: $spacing-unit*2;
-        background-color: #fff;
-        display: inline-block;
-        vertical-align: top;
-        height: 400px;
-    }
-
-    li:nth-child(1) {
-        @extend .col-1-1;
-    }
-}
-
-.post-meta {
-    font-size: 26px;//$small-font-size;
-    color: $grey-color;
-
-}
-
 /**
  * Posts
  */
@@ -283,6 +250,63 @@
     @extend .post-title;
     font-size: 30px;
     display: block;
+    color: $text-color;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+
+    .post-meta {
+        font-size: 18px;
+    }
+
+    li {
+        @extend .col;
+        @extend .col-1-2;
+        position: relative;
+        padding: $spacing-unit*2;
+        border-bottom: solid $spacing-unit*2 #fff;
+        overflow: hidden;
+        //overflow: hidden;
+        background-color: #fff;
+        display: inline-block;
+        vertical-align: top;
+        height: 400px;
+    }
+
+    .read-more { 
+        position: absolute; 
+        bottom: 0; left: 0;
+        width: 100%; 
+        text-align: center; 
+        margin: 0; padding: 30px 0; 
+        
+        /* "transparent" only works here because == rgba(0,0,0,0) */ 
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, #fff));
+        background-image: -webkit-linear-gradient(top, transparent, #fff);
+        background-image: -moz-linear-gradient(top, transparent, #fff);
+        background-image: -ms-linear-gradient(top, transparent, #fff);
+        background-image: -o-linear-gradient(top, transparent, #fff);
+    }
+
+    li:nth-child(1) {
+        @extend .col-1-1;
+    }
+}
+
+.post-meta {
+    font-size: 26px;//$small-font-size;
+    color: $grey-color;
+
 }
 
 .post-content {
@@ -314,6 +338,30 @@
 
     p:first-child {
         font-weight: 700;
+    }
+}
+
+.tags {
+    list-style: none;
+    padding: none;
+    margin: 0;
+
+    .tag {
+        display: inline-block;
+
+        a {
+            padding: 5px 15px;
+            background-color: #fff;
+            color: $grey-color-dark;
+            font-size: 16px;
+            transition: all 0.1s ease;
+
+            &:hover {
+                background-color: $grey-color-light;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
     }
 }
 

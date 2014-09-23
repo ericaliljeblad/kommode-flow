@@ -10,6 +10,15 @@ layout: default
 
   	<article class="post-content">
 		{{ content }}
+		
+		<p>TAGGAR:</p>
+		<ul class="tags">
+			{% for tag in page.tags %}
+				<li class="tag">
+					<a href="{{ tag.link }}">{{ tag }}</a>
+				</li>
+			{% endfor %}
+		</ul>
 
 	</article>
 
