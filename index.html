@@ -38,46 +38,10 @@ layout: default
     {% endfor %}
   </ul>
 
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ site.baseurl }}page{{ paginator.previous_page }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ site.baseurl }}page{{ paginator.next_page }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
-  </div>
-<!-- 
-    Sida {{ paginator.page }}/{{ paginator.total_pages }} <br>
-    <a href="{{ site.baseurl }}page{{ paginator.next_page }}/">Next</a>
-
- -->
+  {% include pagination.html %}
 
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
 
-
-<!-- <p>
-{% assign authorCount = page.authors | size %}
-{% if authorCount == 0 %}
-    No author
-{% elsif authorCount == 1 %}
-    {{ page.authors | first }}
-{% else %}
-    {% for author in page.authors %}
-        {% if forloop.first %}
-            {{ author }}
-        {% elsif forloop.last %}
-            and {{ author }}
-        {% else %}
-            , {{ author }}
-        {% endif %}
-    {% endfor %}
-{% endif %}
-</p> -->
