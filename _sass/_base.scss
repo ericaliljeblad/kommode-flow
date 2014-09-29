@@ -239,6 +239,10 @@ pre {
     left: 0;
     padding: 8px;
 
+    @include media-query($on-palm) {
+        position: absolute;
+    }
+
 }
 
 .flowlink {
@@ -255,6 +259,9 @@ pre {
     top: 60px;
     text-align: center;
     margin: 0 auto;
-
+    
+    @include media-query($on-palm) {
+        position: absolute;
+    }
 }
 
