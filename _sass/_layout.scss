@@ -270,8 +270,6 @@
  * Page content
  */
 .page-content {
-    height: 100%;
-    background-color: #f9f9f9;
     padding: ($spacing-unit * 3) 0;
 }
 
@@ -285,7 +283,6 @@
 .post-width {
     max-width: 720px;
     margin: 0 auto;
-    background-color: $background-color2;
 }
 
 .post-header {

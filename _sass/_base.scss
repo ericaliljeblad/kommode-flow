@@ -229,15 +229,32 @@ pre {
  * Link to kommode.se
  */
 .kommodelink {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 
     position: fixed;
     z-index: 1000;
 
     background: $brand-color;
-    left: 50px;
+    left: 0;
     padding: 8px;
+
+}
+
+.flowlink {
+    width: 60px;
+    height: 60px;
+
+    position: fixed;
+    z-index: 1000;
+
+    background: $grey-color-dark;
+    color: $brand-color;
+    line-height: 60px;
+    left: 0;
+    top: 60px;
+    text-align: center;
+    margin: 0 auto;
 
 }
 
