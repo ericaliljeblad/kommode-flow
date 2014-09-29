@@ -363,7 +363,7 @@
         background: $brand-color-light;
         //background: yellow;
         //padding: 0;
-        height: 600px;
+        height: 700px;
         border-bottom: solid $spacing-unit*2 $brand-color-light;
 
         .read-more { 
@@ -453,10 +453,10 @@ p, .highlight {
  */
 
 .thumbnail {
-    max-height: 300px;
+    max-height: 340px;
     overflow: hidden;
     margin: -$spacing-unit*2;
-    margin-bottom: -$spacing-unit;
+    margin-bottom: $spacing-unit;
 
     img {
         width: 100%;

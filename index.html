@@ -7,9 +7,8 @@ layout: default
  {% include logo.html %}
 
   <ul class="post-list">
-
-     {% for post in paginator.posts %}
-     <li>
+    {% for post in paginator.posts %}
+      <li>
 
         {% if forloop.first %}
           {% if post.thumbnail != null %}
@@ -20,7 +19,7 @@ layout: default
           {% else %}
 
             <div class="thumbnail">
-                <img src="images/picture.png">
+                <img src="../images/lars.jpg">
             </div>
 
           {% endif %}
@@ -36,11 +35,27 @@ layout: default
           {{ post.excerpt }}
         <p class="read-more"></p>
       </li>
+    {% endfor %}
+  </ul>
 
-   {% endfor %}
-
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ site.baseurl }}page{{ paginator.previous_page }}" class="previous">Previous</a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ site.baseurl }}page{{ paginator.next_page }}" class="next">Next</a>
+    {% else %}
+      <span class="next ">Next</span>
+    {% endif %}
+  </div>
+<!-- 
+    Sida {{ paginator.page }}/{{ paginator.total_pages }} <br>
     <a href="{{ site.baseurl }}page{{ paginator.next_page }}/">Next</a>
 
+ -->
 
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
