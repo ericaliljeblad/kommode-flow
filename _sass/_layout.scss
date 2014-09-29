@@ -354,7 +354,7 @@
         }
 
         @include media-query($on-palm) {
-            padding: $spacing-unit;
+            padding: $spacing-unit/2;
         }
     }
 

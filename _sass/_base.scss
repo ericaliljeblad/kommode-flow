@@ -259,9 +259,11 @@ pre {
     top: 60px;
     text-align: center;
     margin: 0 auto;
-    
+
     @include media-query($on-palm) {
         position: absolute;
+        left: 60px;
+        top: 0;
     }
 }
 
