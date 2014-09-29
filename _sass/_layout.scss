@@ -87,6 +87,22 @@
 }
 
 /**
+* IMAGES
+*/
+.avatar {
+    max-width: 100px;
+}
+
+/**
+* AUTHOR
+*/
+.author-name {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/**
  * GRID
  */
 .col-wrapper {
@@ -224,7 +240,7 @@
 /**
  * Posts
  */
-.post {
+.post-width {
     max-width: 720px;
     margin: 0 auto;
 }
@@ -371,6 +387,7 @@ p, .highlight {
 
 .tiny-title {
     margin: 0;
+    font-weight: 300;
 }
 
 /**
