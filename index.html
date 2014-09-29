@@ -7,21 +7,27 @@ layout: default
  {% include logo.html %}
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
+     {% for post in paginator.posts %}
+     <li>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
         <span class="post-meta">
-        {{ post.date | date: "%b %d, %Y" }}
+          {{ post.date | date: "%b %d, %Y" }}
         </span>
-        {{ post.excerpt }}
+          {{ post.excerpt }}
         <p class="read-more"></p>
       </li>
-    {% endfor %}
-  </ul>
+
+   {% endfor %}
+
+    <a href="{{ site.baseurl }}page{{ paginator.next_page }}/">Next</a>
+
+
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
+
