@@ -13,29 +13,32 @@ github_username:  kommode
 authors:
   pierre:
     display_name: Pierre Sköldborg
-    email: pierre.skoldborg@gmail.com
+    email: pierre@kommode.se
   gustav_e:
     display_name: Gustav Eén
-    email: gustaveen@gmail.com
+    email: gustav_e@kommode.se
   gustav_w:
     display_name: Gustav Wallner
-    email: gustav@wallner.nu
+    email: gustav_w@kommode.se
   erica:
     display_name: Erica Liljeblad
-    email: ericaliljeblad@gmail.com
+    email: erical@kommode.se
   marcus:
-    display_name: Pierre Sköldborg
-    email: makkart@gmail.com
+    display_name: Marcus Karlsson
+    email: marcus@kommode.se
   gabriella:
     display_name: Gabriella Jonsson
-    email: gabriella.karin@gmail.com
+    email: gabriella@kommode.se
   lars:
     display_name: Lars Haakon "Katt" Simonsen
-    email: lh.simonsen@gmail.com
+    email: lars@kommode.se
     portrait: lars.jpg
   andreas:
     display_name: Andreas Sundström
-    email: andreas@sundstrom.st
+    email: andreas@kommode.se
+  martina:
+    display_name: Martina Milisic
+    email: martina@kommode.se
 
 # Build settings
 markdown: kramdown

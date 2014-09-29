@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Happy horse- and kitten moment"
+date:   2014-08-28 13:33:00
+author: lars
+thumbnail: /images/picture.png
+categories: horses
+tags: nice cat wait a minute
+---
+
+Hej!
