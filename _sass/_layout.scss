@@ -352,6 +352,10 @@
             background-image: -ms-linear-gradient(top, transparent, #fff);
             background-image: -o-linear-gradient(top, transparent, #fff);
         }
+
+        @include media-query($on-palm) {
+            padding: $spacing-unit;
+        }
     }
 
 
