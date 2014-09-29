@@ -7,8 +7,24 @@ layout: default
  {% include logo.html %}
 
   <ul class="post-list">
+
      {% for post in paginator.posts %}
      <li>
+
+        {% if forloop.first %}
+          {% if post.thumbnail != null %}
+
+            <div class="thumbnail">
+                <img src="{{ post.thumbnail }}">
+            </div>
+          {% else %}
+
+            <div class="thumbnail">
+                <img src="images/picture.png">
+            </div>
+
+          {% endif %}
+        {% endif %}
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -31,3 +47,22 @@ layout: default
 
 </div>
 
+
+<!-- <p>
+{% assign authorCount = page.authors | size %}
+{% if authorCount == 0 %}
+    No author
+{% elsif authorCount == 1 %}
+    {{ page.authors | first }}
+{% else %}
+    {% for author in page.authors %}
+        {% if forloop.first %}
+            {{ author }}
+        {% elsif forloop.last %}
+            and {{ author }}
+        {% else %}
+            , {{ author }}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+</p> -->
