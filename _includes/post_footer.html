@@ -1,0 +1,20 @@
+{% if page.author %}
+  {% assign author = site.authors[page.author] %}
+{% endif %}
+
+<footer class="post-width">
+
+      <p class="tiny-title">FÖRFATTARE:</p>
+      <img class="avatar" src="{{ site.url }}/kommode-flow/images/{{ author.portrait }}" alt="{{ author.display_name }}">
+      <p class="author-name">{{ author.display_name }}</p>
+
+      <p class="tiny-title">TAGGAR:</p>
+      <ul class="tags">
+        {% for tag in page.tags %}
+        <li class="tag">
+          <a href="{{ tag.link }}">{{ tag }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+
+</footer>

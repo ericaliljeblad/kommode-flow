@@ -10,6 +10,33 @@ baseurl: "/kommode-flow/" # the subpath of your site, e.g. /blog/
 twitter_username: jekyllrb
 github_username:  kommode
 
+authors:
+  pierre:
+    display_name: Pierre Sköldborg
+    email: pierre.skoldborg@gmail.com
+  gustav_e:
+    display_name: Gustav Eén
+    email: gustaveen@gmail.com
+  gustav_w:
+    display_name: Gustav Wallner
+    email: gustav@wallner.nu
+  erica:
+    display_name: Erica Liljeblad
+    email: ericaliljeblad@gmail.com
+  marcus:
+    display_name: Pierre Sköldborg
+    email: makkart@gmail.com
+  gabriella:
+    display_name: Gabriella Jonsson
+    email: gabriella.karin@gmail.com
+  lars:
+    display_name: Lars Haakon "Katt" Simonsen
+    email: lh.simonsen@gmail.com
+    portrait: lars.jpg
+  andreas:
+    display_name: Andreas Sundström
+    email: andreas@sundstrom.st
+
 # Build settings
 markdown: kramdown
 
