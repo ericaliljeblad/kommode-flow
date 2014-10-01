@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-single
 title:  "confession: i have a tiny horse face embedded in my original face"
 date:   2014-08-23 10:56:00
 author: lars

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-single
 title:  "Lunchy grabtime"
 date:   2014-09-29 11:25:20
 categories: horse-death

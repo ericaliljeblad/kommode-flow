@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-single
 title:  "Herro cupcake pancake"
 date:   2014-09-29 11:24:20
 categories: horse-death
