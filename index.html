@@ -14,9 +14,10 @@ layout: default
       {% if post.thumbnail != nil and forloop.first %}
 
         <li class="firstPostWithThumb">
-          <div class="thumbnail" style="background-image: url({{ page.relative }}{{ post.thumbnail }}); height: 1000px">
-            <!-- <img src="{{ post.thumbnail }}"> -->
-          </div>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <div class="thumbnail" style="background-image: url({{ page.relative }}{{ post.thumbnail }}); height: 1000px">
+            </div>
+          </a>
 
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
