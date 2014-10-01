@@ -92,16 +92,19 @@
 .avatar {
     max-width: 100px;
     margin-right: 15px;
+
+    @include media-query($on-palm) {
+        margin-bottom: 15px;
+    }
 }
 
 .image-top {
-    height: 500px;
-    // background-image: url(../images/picture.png);
+    background-size: cover;
     background-position: center center;
 
-    // @media screen and (max-width: $break-small) {
-    //     background-image: url(/images/stereotypiskt/stereotypiskt-small.jpg);
-    // }
+    @include media-query($on-palm) {
+        height: 250px !important;
+    }
 }
 
 /**
@@ -120,6 +123,12 @@
     .email {
         text-transform: lowercase;
     }
+
+    @include media-query($on-palm) {
+        .name {
+            display: block;
+        }
+    }
 }
 
 .flush {
@@ -134,6 +143,10 @@
 
 .space-top {
     margin-top: $spacing-unit * 4;
+
+    @include media-query($on-palm) {
+        margin-top: $spacing-unit;
+    }
 }
 
 /**
@@ -195,20 +208,6 @@
         }
     }
 }
-
-// @include media-query($on-laptop) {
-//     .col-1,
-//     .col-2 {
-//         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-//         width:         calc(50% - (#{$spacing-unit} / 2));
-//     }
-
-//     .col-3 {
-//         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-//         width:         calc(100% - (#{$spacing-unit} / 2));
-//     }
-// }
-
 
 /**
  * Site footer
@@ -302,6 +301,10 @@
 .post-header {
     text-align: center;
     margin-bottom: $spacing-unit * 2;
+
+    @include media-query($on-laptop) {
+        margin-bottom: 0;
+    }
 }
 
 .post-title {
@@ -461,7 +464,11 @@
 }
 
 p, .highlight {
-    margin-bottom: 30px;
+    margin-bottom: $spacing-unit;
+
+    @include media-query($on-laptop) {
+        margin-bottom: $spacing-unit * 0.5;
+    }
 }
 
 .pagination {

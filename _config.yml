@@ -14,31 +14,39 @@ authors:
   pierre:
     display_name: Pierre Sköldborg
     email: pierre@kommode.se
+    portrait: generic.jpg
   gustav_e:
     display_name: Gustav Eén
     email: gustav_e@kommode.se
+    portrait: generic.jpg
   gustav_w:
     display_name: Gustav Wallner
     email: gustav_w@kommode.se
+    portrait: generic.jpg
   erica:
     display_name: Erica Liljeblad
     email: erica@kommode.se
+    portrait: generic.jpg
   marcus:
     display_name: Marcus Karlsson
     email: marcus@kommode.se
+    portrait: generic.jpg
   gabriella:
     display_name: Gabriella Jonsson
     email: gabriella@kommode.se
+    portrait: generic.jpg
   lars:
-    display_name: Lars Haakon "Katt" Simonsen
+    display_name: Lars Haakon Simonsen
     email: lars@kommode.se
-    portrait: lars.jpg
+    portrait: generic.jpg
   andreas:
     display_name: Andreas Sundström
     email: andreas@kommode.se
+    portrait: generic.jpg
   martina:
     display_name: Martina Milisic
     email: martina@kommode.se
+    portrait: generic.jpg
 
 # Build settings
 markdown: kramdown
