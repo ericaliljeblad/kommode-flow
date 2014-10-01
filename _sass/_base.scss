@@ -223,12 +223,8 @@ pre {
     margin-top: $spacing-unit;
 
     @include media-query($on-palm) {
-        width: calc(80%);
+        width: 250px;
     }
-
-    // svg {
-    //     height: 100%;
-    // }
 }
 
 
