@@ -21,4 +21,4 @@ print_hi('Tom')
 
 Wafer brownie fruitcake sweet roll soufflé jelly. Pie danish macaroon donut. Tiramisu sweet marzipan gingerbread. Croissant dessert liquorice jujubes. Liquorice biscuit muffin. Bonbon lemon drops cotton candy. Icing powder fruitcake marshmallow pastry apple pie carrot cake powder fruitcake. Biscuit cupcake chocolate dragée caramels. Cookie marshmallow jelly. Chocolate caramels pudding. Tart caramels marzipan chocolate. Marzipan biscuit pastry wafer macaroon. Unerdwear.com toffee jelly beans oat cake muffin croissant soufflé.
 
-![A horse radish dogma]({{ site.url }}/kommode-flow/images/picture.png)
+![A horse radish dogma]({{ site.baseurl }}/images/picture.png)

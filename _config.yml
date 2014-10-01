@@ -22,7 +22,7 @@ authors:
     email: gustav_w@kommode.se
   erica:
     display_name: Erica Liljeblad
-    email: erical@kommode.se
+    email: erica@kommode.se
   marcus:
     display_name: Marcus Karlsson
     email: marcus@kommode.se
@@ -44,4 +44,4 @@ authors:
 markdown: kramdown
 
 paginate: 6
-paginate_path: "page:num/"
+paginate_path: "/page:num/"
