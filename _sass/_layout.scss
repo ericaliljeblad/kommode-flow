@@ -360,11 +360,12 @@
             margin: 0; padding: 30px 0; 
             
             /* "transparent" only works here because == rgba(0,0,0,0) */ 
-            background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, #fff));
-            background-image: -webkit-linear-gradient(top, transparent, #fff);
-            background-image: -moz-linear-gradient(top, transparent, #fff);
-            background-image: -ms-linear-gradient(top, transparent, #fff);
-            background-image: -o-linear-gradient(top, transparent, #fff);
+
+            background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0)),color-stop(1, #fff));
+            background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), #fff);
+            background-image: -moz-linear-gradient(top, rgba(255,255,255,0), #fff);
+            background-image: -ms-linear-gradient(top, rgba(255,255,255,0), #fff);
+            background-image: -o-linear-gradient(top, rgba(255,255,255,0), #fff);
         }
 
         @include media-query($on-palm) {
@@ -385,11 +386,14 @@
         .read-more { 
             
             /* "transparent" only works here because == rgba(0,0,0,0) */ 
-            background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, $brand-color-light));
-            background-image: -webkit-linear-gradient(top, transparent, $brand-color-light);
-            background-image: -moz-linear-gradient(top, transparent, $brand-color-light);
-            background-image: -ms-linear-gradient(top, transparent, $brand-color-light);
-            background-image: -o-linear-gradient(top, transparent, $brand-color-light);
+            //background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, transparent),color-stop(1, $brand-color-light));
+            
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to($brand-color-light));
+
+            background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
+            background-image: -moz-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
+            background-image: -ms-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
+            background-image: -o-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
         }
     }
 

@@ -221,6 +221,10 @@ pre {
     margin: 0 auto;
     margin-bottom: $spacing-unit;
     margin-top: $spacing-unit;
+
+    svg {
+        height: 100%;
+    }
 }
 
 
