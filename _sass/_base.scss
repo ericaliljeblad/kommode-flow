@@ -243,6 +243,7 @@ pre {
     left: 0;
     top: 0;
     padding: 8px;
+    opacity: .9;
 
     @include media-query($on-palm) {
         position: absolute;
@@ -263,7 +264,8 @@ pre {
     top: 60px;
     text-align: center;
     margin: 0 auto;
-    font-size: 40px;
+    font-size: 30px;
+    opacity: .9;
 
     @include media-query($on-palm) {
         position: absolute;

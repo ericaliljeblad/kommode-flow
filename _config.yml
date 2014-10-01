@@ -53,3 +53,7 @@ markdown: kramdown
 
 paginate: 6
 paginate_path: "/page:num/"
+
+assets:
+  sources:
+    - _assets/fonts
