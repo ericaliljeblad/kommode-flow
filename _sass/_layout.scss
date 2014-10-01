@@ -371,6 +371,7 @@
 
         @include media-query($on-palm) {
             padding: $spacing-unit/2;
+            border-bottom: solid $spacing-unit #fff;
         }
     }
 
@@ -389,6 +390,11 @@
             background-image: -ms-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
             background-image: -o-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
         }
+
+        @include media-query($on-palm) {
+            border-bottom: solid $spacing-unit $brand-color-light;
+        }
+
     }
 
     li:nth-child(2) {
