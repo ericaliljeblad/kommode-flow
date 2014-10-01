@@ -222,9 +222,13 @@ pre {
     margin-bottom: $spacing-unit;
     margin-top: $spacing-unit;
 
-    svg {
-        height: 100%;
+    @include media-query($on-palm) {
+        width: calc(80%);
     }
+
+    // svg {
+    //     height: 100%;
+    // }
 }
 
 
