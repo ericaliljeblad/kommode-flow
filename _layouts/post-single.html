@@ -6,9 +6,8 @@
       
       {% assign thumb = page.thumbnail %}
       {% if thumb And thumb != "" And thumb != null %}
-        <div style="background-image: url({{ page.relative }}{{ thumb }}); background-size: cover; background-position: center center; height: 500px"></div>
+        <div class="image-top" style="background-image: url({{ page.relative }}{{ thumb }}); height: 500px"></div>
       {% else %}
-        <div></div>
       {% endif %}
 
     <div class="post-width">
