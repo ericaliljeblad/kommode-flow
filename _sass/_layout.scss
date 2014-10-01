@@ -490,6 +490,11 @@ p, .highlight {
 
     background-size: cover;
     background-position: center center;
+    
+    @include media-query($on-palm) {
+        max-height: 250px;
+    }
+
 }
 
 /**
