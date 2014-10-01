@@ -359,8 +359,6 @@
             text-align: center; 
             margin: 0; padding: 30px 0; 
             
-            /* "transparent" only works here because == rgba(0,0,0,0) */ 
-
             background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,0)),color-stop(1, #fff));
             background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), #fff);
             background-image: -moz-linear-gradient(top, rgba(255,255,255,0), #fff);
@@ -380,16 +378,12 @@
         background: $brand-color-light;
         //background: yellow;
         //padding: 0;
-        height: 700px;
+        //height: 700px;
         border-bottom: solid $spacing-unit*2 $brand-color-light;
 
         .read-more { 
             
-            /* "transparent" only works here because == rgba(0,0,0,0) */ 
-            //background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, transparent),color-stop(1, $brand-color-light));
-            
-            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to($brand-color-light));
-
+            background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, rgba(255,255,255,0)),color-stop(1, $brand-color-light));
             background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
             background-image: -moz-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
             background-image: -ms-linear-gradient(top, rgba(255,255,255,0), $brand-color-light);
@@ -399,6 +393,10 @@
 
     li:nth-child(2) {
         @extend .col-1-1;
+    }
+
+    li.firstPostWithThumb {
+        height: 700px;
     }
 }
 
