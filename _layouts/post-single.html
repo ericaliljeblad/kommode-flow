@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-      {% include post_footer.html %}
-    </div>
-
+    {% if page.thumbnail %}
+    hej<div style="background-image: url(images/picture.png); background-position: center center;"></div>
+    {% endif %}
+    <div class="post-width">
+      <header class="post-header space-top">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}
+        </p> 
+      </header>
+      <article class="post-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+        {% include post_footer.html %}
+      </article>
+    </div>  
   </body>
-
 </html>

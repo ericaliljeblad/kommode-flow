@@ -94,6 +94,16 @@
     margin-right: 15px;
 }
 
+.image-top {
+    height: 500px;
+    // background-image: url(../images/picture.png);
+    background-position: center center;
+
+    // @media screen and (max-width: $break-small) {
+    //     background-image: url(/images/stereotypiskt/stereotypiskt-small.jpg);
+    // }
+}
+
 /**
 * AUTHOR
 */
@@ -120,6 +130,10 @@
     margin: 0;
     margin-bottom: 10px;
     font-weight: 300;
+}
+
+.space-top {
+    margin-top: $spacing-unit * 4;
 }
 
 /**

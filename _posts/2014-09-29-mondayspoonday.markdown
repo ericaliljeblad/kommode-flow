@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-single
 title:  "This is monday spoonday"
 date:   2014-09-29 11:19:20
 categories: horse-death

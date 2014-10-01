@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-single
 title:  "Welcome to Jekyll!"
 date:   2014-09-22 16:29:20
 categories: jekyll

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-single
 title:  "codepen embed test"
 date:   1983-08-23 10:56:00
 categories: codepen
