@@ -8,30 +8,28 @@ layout: default
 
   <ul class="post-list">
     {% for post in paginator.posts %}
-      
-        
-      {% if post.thumbnail != nil And forloop.first %}
+             
+      {% if post.thumbnail != nil and forloop.first %}
 
-      <li class="firstPostWithThumb">
-        <div class="thumbnail">
-            <img src="{{ post.thumbnail }}">
-        </div>
+        <li class="firstPostWithThumb">
+          <div class="thumbnail">
+              <img src="{{ post.thumbnail }}">
+          </div>
 
-        <h2>
-          {{post.thumbnail}}
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
 
-        <span class="post-meta">
-          {{ post.date | date: "%b %d, %Y" }}
-        </span>
-          {{ post.excerpt }}
-        <p class="read-more"></p>
-      </li>
+          <span class="post-meta">
+            {{ post.date | date: "%b %d, %Y" }}
+          </span>
+            {{ post.excerpt }}
+          <p class="read-more"></p>
+        </li>
 
       {% else %}
 
-        <li class="">
+        <li>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
