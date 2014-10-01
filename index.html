@@ -5,6 +5,8 @@ layout: default
 <div class="home">
 
  {% include logo.html %}
+ {% include pagination.html %}
+
 
   <ul class="post-list">
     {% for post in paginator.posts %}
@@ -12,8 +14,8 @@ layout: default
       {% if post.thumbnail != nil and forloop.first %}
 
         <li class="firstPostWithThumb">
-          <div class="thumbnail">
-              <img src="{{ post.thumbnail }}">
+          <div class="thumbnail" style="background-image: url({{ page.relative }}{{ post.thumbnail }}); height: 1000px">
+            <!-- <img src="{{ post.thumbnail }}"> -->
           </div>
 
           <h2>
