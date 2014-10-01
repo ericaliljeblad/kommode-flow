@@ -3,10 +3,14 @@
   {% include head.html %}
   <body>
     {% include header.html %}
+      
+      {% assign thumb = page.thumbnail %}
+      {% if thumb And thumb != "" And thumb != null %}
+        <div style="background-image: url({{ page.relative }}{{ thumb }}); background-size: cover; background-position: center center; height: 500px"></div>
+      {% else %}
+        <div></div>
+      {% endif %}
 
-    {% if page.thumbnail %}
-    hej<div style="background-image: url(images/picture.png); background-position: center center;"></div>
-    {% endif %}
     <div class="post-width">
       <header class="post-header space-top">
         <h1 class="post-title">{{ page.title }}</h1>

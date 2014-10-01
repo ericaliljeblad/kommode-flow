@@ -3,6 +3,7 @@ layout: post-single
 title:  "ja alltså jag menade inte så"
 date:   2014-09-29 14:45:20
 categories: horse-death
+author: lars
 tags: jekyll
 thumbnail: "images/diamond.jpg"
 ---
