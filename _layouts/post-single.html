@@ -6,7 +6,7 @@
       
       {% assign thumb = page.thumbnail %}
       {% if thumb And thumb != "" And thumb != null %}
-        <div class="image-top" style="background-image: url({{ page.relative }}{{ thumb }}); height: 500px"></div>
+        <div class="image-top" style="background-image: url({{ site.baseurl }}/{{ thumb }}); height: 500px"></div>
       {% else %}
       {% endif %}
 
